@@ -1,16 +1,27 @@
 /* Color Theme Swatches in Hex */
 .intro {
-  height: 30rem;
+  height: 35rem;
   text-align: center;
   padding-top: 8rem;
 }
 
 .about {
-  height: 30rem;
+  height: 25rem;
+}
+.about__table {
+  margin: 15px;
+  margin-top: 2em;
+  padding: 10px;
 }
 
 .contact {
   height: 30rem;
+}
+
+.social-net {
+  display: inline;
+  width: 10px;
+  font-size: 2em;
 }
 
 body {
