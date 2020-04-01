@@ -1,5 +1,15 @@
-@import '_utils';
-@import '_base';
-@import '_layout';
-@import '_module';
-@import '_page';
+@import './base/base';
+@import './utils/variables';
+// @import './layout';
+// @import './composants';
+@import './pages/main';
+//@import './vendors';
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin : 20px;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
