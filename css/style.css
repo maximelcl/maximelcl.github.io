@@ -1,6 +1,21 @@
+/* Color Theme Swatches in Hex */
+.intro {
+  height: 30rem;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.about {
+  height: 30rem;
+}
+
+.contact {
+  height: 30rem;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  margin: 20px;
+  margin-top: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */

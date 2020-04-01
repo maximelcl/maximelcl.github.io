@@ -6,23 +6,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/fc9a254278.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css"></link>
-	<title>Bonjour! Je m'appelle Maxime !</title>
+	<title>Bonjour, je m'appelle Maxime !</title>
 </head>
 <body>
 	<header>
-		
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: white";>
+		  <a class="navbar-brand" href="#">
+		  	<img src="img/Maxime.svg" height="50" alt="Max">
+		  </a>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav ml-auto">
+		      <a class="nav-item nav-link" href="#">A propos</a>
+		      <a class="nav-item nav-link" href="Contact.asp">Curriculum</a>
+		      <a class="nav-item nav-link disabled" href="#">Projets <span class="badge badge-dark">Soon</span></a>
+		      <a class="nav-item nav-link disabled" href="#">Blog <span class="badge badge-dark">Soon</span></a>
+		      <a class="nav-item nav-link" href="#">Contact</a>
+		    </div>
+		  </div>
+		</nav>
 	</header>
 	<main>
-		<div>
-			<h1>Maxime Leclerc</h1>
-			<h2>Je suis developpeur web</h2>
+		<div class="container-md intro">
+			<div class="row">
+				<div class="col-sm-12 introduction">
+					<p>Bonjour, je m'appelle</p>
+					<h1>Maxime Leclerc</h1>
+					<h2>Je suis développeur web</h2>
+				</div>
+			</div>
 		</div>
-		
+		<div class="container-md about">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="img/photo.png">
+				</div>
+				<div class="col-md-6">
+					<h2>A propos</h2>
+					<p>Je m'appelle Maxime Leclerc, je suis ingénieur diplomé en génie urbain à l'UTC. Je me suis reconverti au <strong>développement web</strong> depuis peu. Je recherche un poste de développeur junior dans une <strong>startup à Paris</strong>.</p>
+					<table>
+						<tr>
+							<td>Nom</td>
+							<td>Maxime Leclerc</td>
+						</tr>
+						<tr>
+							<td>Date de naissance</td>
+							<td>11 aout 1994 à Saint-Brieuc</td>
+						</tr>
+						<tr>
+							<td>Localisation</td>
+							<td>Romainville</td>
+						</tr>
+						<tr>
+							<td>Mail</td>
+							<td>maximeleclerc3@gmail.com</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		<div class="container-md curriculum">
+			<div class="row">
+				<div class="col-md-4 sidebar">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Expériences</li>
+						<li class="list-group-item">Formation</li>
+						<li class="list-group-item">Compétences</li>
+					</ul>
+				</div>
+				<div class="col-md-8 cv">
+					<div id="page1">
+						<h2>Expériences</h2>
+						<div class="cv-item">
+							<p><span class="cv-item__date">Jan 2020 - Mar 2020</span></p>
+							<h3>Ingénieur consultant AMO</h3>
+							<h3 class="cv-item__org"><a href="https://www.omeaconseil.fr/">Oméa</a>, Paris</h3>
+							<p>CDI | En tant que consultant, j'ai intégré la mission d’AMO pilotage opérationnel des Jeux Olympiques et Paralympiques de 2024 menée par Artelia pour Paris 2024 et la Société de Livraison des Ouvrages Olympiques. J'étais en charge du suivi des plannings et du reporting d'avancement de différents ouvrages</p>
+						</div>
+						<div class="cv-item">
+							<p><span class="cv-item__date">Fév 2019 - Déc 2019</span></p>
+							<h3>Ingénieur étude de prix</h3>
+							<h3 class="cv-item__org">Little Worker, Paris</h3>
+							<p>CDI | Little Worker est une startup de la rénovation d’intérieur d'appartement et de maison. J'étais en charge de la réalisation des études de prix pour les agences de Paris et Bordeaux. En un an, les effectifs ont doublés pour passer de 20 à 40 collaborateurs.</p>
+						</div>
+						<div class="cv-item">
+							<p><span class="cv-item__date">Fév 2018 - Déc 2018</span></p>
+							<h3>Ingénieur expertise et innovation</h3>
+							<h3 class="cv-item__org">Artelia Bâtiment et Industrie, Paris</h3>
+							<p>PFE + CDD | Artelia est le deuxième ingénieriste Français dans les domaines du BTP, environnement, énergie et transport. Au seinde la Direction Technique et Innovation, j'étais en charge du suivi de développements d’outils internes, du déploiement de solutions numériques pour les opérationnels et de la rédaction de cahiers des charges fonctionnel.</p>
+						</div>
+						<div class="cv-item">
+							<p><span class="cv-item__date">Sep 2016 - Fév 2017</span></p>
+							<h3>Assistant ingénieur BIM</h3>
+							<h3 class="cv-item__org">Alterea, Nantes (44)</h3>
+							<p>Stage assistant ingénieur | J'éais en charge de la modélisation de maquettes sur Revit, de la coordination BIM, de l'amélioration des outils et méthodes, de la rédaction de cahiers des charges BIM et de la veille stratégique.</p>
+						</div>
+						<div class="cv-item">
+							<p><span class="cv-item__date">Mai 2014 - Jui 2014</span></p>
+							<h3>Assistant économiste de la construction</h3>
+							<h3 class="cv-item__org">Batim Ingénierie, Plérin (22)</h3>
+							<p>Stage technicien supérieur | Réalisation d'estimatifs, de descriptifs sommaire, d'analyse d'appel d'offre et de dessinde détails.</p>
+						</div>
+					</div>
+					<div id="page2">
+						<h2>Formation</h2>
+						<div class="cv-item">
+							<p><span class="cv-item__date">Sep 2015 - Jui 2018</span></p>
+							<h3>Ingénieur génie urbain</h3>
+							<h3 class="cv-item__org"><a href="https://www.utc.fr/">Université de Technologie de Compiègne</a></h3>
+							<p>Formation recouvrant les principaux de l’urbanisme, l’aménagement, la construction, l’immobilier, l’énergie et les transports avec une forte composante en gestion de projets.</p>
+						</div>
+						<div class="cv-item">
+							<p><span class="cv-item__date">Sep 2017 - Fév 2018</span></p>
+							<h3>Echange international</h3>
+							<h3 class="cv-item__org">Université de Shanghai, UTSEUS</h3>
+							<p>Semestre d’échange : gestion de projet, data science, innovation, éco conception, leadership, entreprenariat, mandarin.</p>
+						</div>
+						<div class="cv-item">
+							<p><span class="cv-item__date">Sep 2014 - Jui 2015</span></p>
+							<h3>Classe préparatoire ATS</h3>
+							<h3 class="cv-item__org">Lycée Joliot-Curie, Rennes (35)</h3>
+						</div>
+						<div class="cv-item">
+							<p><span class="cv-item__date">Sep 2012 - Fév 2014</span></p>
+							<h3>DUT Génie Civil</h3>
+							<h3 class="cv-item__org">IUT Génie Civil de l'Université de Rennes (35)</h3>
+						</div>
+						<div class="cv-item">
+							<p><span class="cv-item__date">Jui 2012</span></p>
+							<h3>Baccalauréat Scientique</h3>
+							<h3 class="cv-item__org">Lycée Saint-Pierre, Saint-Brieuc (22)</h3>
+						</div>
+					</div>
+					<div id="page3">
+						<h2>Compétences</h2>
+						<div class="card">
+						  <div class="card-body">
+						    <h5 class="card-title">HTML5</h5>
+						    <p class="card-progress">Progress circle ??</p>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-body">
+						    <h5 class="card-title">CSS3</h5>
+						    <p class="card-progress">Progress circle ??</p>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-body">
+						    <h5 class="card-title">Javascript</h5>
+						    <p class="card-progress">Progress circle ??</p>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-md contact">
+			<h2>Contact</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<img src="#">
+				</div>
+				<div class="col-md-6">
+					<form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Adresse email</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="moi@mail.co">
+					    <small id="emailHelp" class="form-text text-muted">Je ne diffuserais jamais votre email a qui que ce soit</small>
+					  </div>
+					  <div class="form-group">
+					  	<label>Sujet</label>
+					  	<input class="form-control" type="text" placeholder="Sujet...">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleFormControlTextarea1">Example textarea</label>
+					    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ecrivez moi ici ..."></textarea>
+					  </div>
+					  <button type="submit" class="btn btn-primary">Envoyer</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</main>
 	<footer>
-		
+		<div class="row">
+			<div class="col-md-4">
+				<h3>A propos</h3>
+				<p>Je m'appelle Maxime Leclerc, je suis ingénieur diplomé en génie urbain à l'UTC. Je me suis reconverti au <strong>développement web</strong> depuis peu. Je recherche un poste de développeur junior dans une <strong>startup à Paris</p>
+			</div>
+			<div class="col-md-4">
+				<h3>Réseaux sociaux</h3>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item"><a href="https://www.linkedin.com/in/maxime-leclerc/"><i class="fab fa-linkedin"></i></a></li>
+					<li class="list-group-item"><a href="https://github.com/maximelcl"><i class="fab fa-github"></i></a></li>
+					<li class="list-group-item"><a href="https://twitter.com/MaximeLeclerc10"><i class="fab fa-twitter-square"></i></a></li>
+					<li class="list-group-item"><a href="https://medium.com/@MaximeLeclerc10"><i class="fab fa-medium"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h3>Menu</h3>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item"><a href="#">Accueil</a></li>
+					<li class="list-group-item"><a href="#">A propos</a></li>
+					<li class="list-group-item"><a href="#">Curriculum</a></li>
+					<li class="list-group-item"><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
 	</footer>
-
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

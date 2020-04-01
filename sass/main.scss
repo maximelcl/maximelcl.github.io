@@ -1,11 +1,11 @@
 @import './base/base';
 @import './utils/variables';
-// @import './layout';
+@import './layout/layout';
 // @import './composants';
 @import './pages/main';
 //@import './vendors';
 
 body {
 	font-family: 'Roboto', sans-serif;
-	margin : 20px;
+	margin-top: 4rem;
 }
