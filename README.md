@@ -1,2 +1,2 @@
-# myresume
-My first personnal personal project
+# My personal Website
+This is my first personal project. Few more coming...
