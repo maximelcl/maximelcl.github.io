@@ -13,22 +13,25 @@
 <body>
 	<header>
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: white";>
-		  <a class="navbar-brand" href="#">
-		  	<img src="img/Maxime.svg" height="60" alt="Max">
-		  </a>
-		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		    <div class="navbar-nav ml-auto">
-		      <a class="nav-item nav-link" href="#">A propos</a>
-		      <a class="nav-item nav-link" href="Contact.asp">Curriculum</a>
-		      <a class="nav-item nav-link disabled" href="#">Projets <span class="badge badge-dark">Soon</span></a>
-		      <a class="nav-item nav-link disabled" href="#">Blog <span class="badge badge-dark">Soon</span></a>
-		      <a class="nav-item nav-link" href="#">Contact</a>
-		    </div>
-		  </div>
+			<a class="navbar-brand" href="#">
+				<img src="img/Maxime.svg" height="30" alt="Max">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav ml-auto">
+		    		<a class="nav-item nav-link" href="#">A propos</a>
+		    		<a class="nav-item nav-link" href="#curriculum">Curriculum</a>
+		    		<a class="nav-item nav-link disabled" href="#">Projets <span class="badge badge-dark">Soon</span></a>
+		    		<a class="nav-item nav-link disabled" href="#">Blog <span class="badge badge-dark">Soon</span></a>
+		    		<a class="nav-item nav-link" href="#contact">Contact</a>
+		    	</div>
+		  	</div>
 		</nav>
 	</header>
 	<main>
-		<div class="container-md intro">
+		<div class="container-md" id="intro">
 			<div class="row">
 				<div class="col-sm-12 introduction">
 					<p>Bonjour, je m'appelle</p>
@@ -37,15 +40,15 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-md about">
+		<div class="container-md" id="about">
 			<div class="row">
-				<div class="col-md-6">
-					<img src="img/photo.png" alt="Photo de profil Maxime">
+				<div class="col-md-6 d-none d-md-block">
+					<img src="img/photo_profil.jpg" class="img-fluid rounded float-right" alt="Photo de profil Maxime">
 				</div>
 				<div class="col-md-6">
 					<h2>A propos</h2>
 					<p>Je m'appelle Maxime Leclerc, je suis ingénieur diplomé de l'UTC en génie urbain. Je me suis reconverti au <strong>développement web</strong> depuis peu. Je recherche un poste de développeur junior dans une <strong>startup à Paris</strong>.</p>
-					<table class="about__table">
+					<table class="table table-borderless">
 						<tr>
 							<td>Nom</td>
 							<td><strong>Maxime Leclerc</strong></td>
@@ -66,13 +69,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-md curriculum">
+		<div class="container-md" id="curriculum">
 			<div class="row">
-				<div class="col-md-4 sidebar">
+				<div class="col-md-4 curriculum__sidebar">
 					<ul class="list-group list-group-flush">
-						<li class="list-group-item">Expériences</li>
-						<li class="list-group-item">Formation</li>
-						<li class="list-group-item">Compétences</li>
+						<li class="list-group-item"><a href="#page1">Expériences</a></li>
+						<li class="list-group-item"><a href="#page2">Formation</a></li>
+						<li class="list-group-item"><a href="#page3">Compétences</a></li>
 					</ul>
 				</div>
 				<div class="col-md-8 cv">
@@ -81,32 +84,32 @@
 						<div class="cv-item">
 							<p><span class="cv-item__date">Jan 2020 - Mar 2020</span></p>
 							<h3>Ingénieur consultant AMO</h3>
-							<h3 class="cv-item__org"><a href="https://www.omeaconseil.fr/">Oméa</a>, Paris</h3>
-							<p>CDI | En tant que consultant, j'ai intégré la mission d’AMO pilotage opérationnel des Jeux Olympiques et Paralympiques de 2024 menée par Artelia pour Paris 2024 et la Société de Livraison des Ouvrages Olympiques. J'étais en charge du suivi des plannings et du reporting d'avancement de différents ouvrages</p>
+							<p class="cv-item__org"><a href="https://www.omeaconseil.fr/">Oméa</a>, Paris</p>
+							<p class="text-black-50">CDI | En tant que consultant, j'ai intégré la mission d’AMO pilotage opérationnel des Jeux Olympiques et Paralympiques de 2024 menée par Artelia pour Paris 2024 et la Société de Livraison des Ouvrages Olympiques. J'étais en charge du suivi des plannings et du reporting d'avancement de différents ouvrages</p>
 						</div>
 						<div class="cv-item">
 							<p><span class="cv-item__date">Fév 2019 - Déc 2019</span></p>
 							<h3>Ingénieur étude de prix</h3>
-							<h3 class="cv-item__org">Little Worker, Paris</h3>
-							<p>CDI | Little Worker est une startup de la rénovation d’intérieur d'appartement et de maison. J'étais en charge de la réalisation des études de prix pour les agences de Paris et Bordeaux. En un an, les effectifs ont doublés pour passer de 20 à 40 collaborateurs.</p>
+							<p class="cv-item__org">Little Worker, Paris</p>
+							<p class="text-black-50">CDI | Little Worker est une startup de la rénovation d’intérieur d'appartement et de maison. J'étais en charge de la réalisation des études de prix pour les agences de Paris et Bordeaux. En un an, les effectifs ont doublés pour passer de 20 à 40 collaborateurs.</p>
 						</div>
 						<div class="cv-item">
 							<p><span class="cv-item__date">Fév 2018 - Déc 2018</span></p>
 							<h3>Ingénieur expertise et innovation</h3>
-							<h3 class="cv-item__org">Artelia Bâtiment et Industrie, Paris</h3>
-							<p>PFE + CDD | Artelia est le deuxième ingénieriste Français dans les domaines du BTP, environnement, énergie et transport. Au seinde la Direction Technique et Innovation, j'étais en charge du suivi de développements d’outils internes, du déploiement de solutions numériques pour les opérationnels et de la rédaction de cahiers des charges fonctionnel.</p>
+							<p class="cv-item__org">Artelia Bâtiment et Industrie, Paris</p>
+							<p class="text-black-50">PFE + CDD | Artelia est le deuxième ingénieriste Français dans les domaines du BTP, environnement, énergie et transport. Au seinde la Direction Technique et Innovation, j'étais en charge du suivi de développements d’outils internes, du déploiement de solutions numériques pour les opérationnels et de la rédaction de cahiers des charges fonctionnel.</p>
 						</div>
 						<div class="cv-item">
 							<p><span class="cv-item__date">Sep 2016 - Fév 2017</span></p>
 							<h3>Assistant ingénieur BIM</h3>
-							<h3 class="cv-item__org">Alterea, Nantes (44)</h3>
-							<p>Stage assistant ingénieur | J'éais en charge de la modélisation de maquettes sur Revit, de la coordination BIM, de l'amélioration des outils et méthodes, de la rédaction de cahiers des charges BIM et de la veille stratégique.</p>
+							<p class="cv-item__org">Alterea, Nantes (44)</p>
+							<p class="text-black-50">Stage assistant ingénieur | J'éais en charge de la modélisation de maquettes sur Revit, de la coordination BIM, de l'amélioration des outils et méthodes, de la rédaction de cahiers des charges BIM et de la veille stratégique.</p>
 						</div>
 						<div class="cv-item">
 							<p><span class="cv-item__date">Mai 2014 - Jui 2014</span></p>
 							<h3>Assistant économiste de la construction</h3>
-							<h3 class="cv-item__org">Batim Ingénierie, Plérin (22)</h3>
-							<p>Stage technicien supérieur | Réalisation d'estimatifs, de descriptifs sommaire, d'analyse d'appel d'offre et de dessinde détails.</p>
+							<p class="cv-item__org">Batim Ingénierie, Plérin (22)</p>
+							<p class="text-black-50">Stage technicien supérieur | Réalisation d'estimatifs, de descriptifs sommaire, d'analyse d'appel d'offre et de dessinde détails.</p>
 						</div>
 					</div>
 					<div id="page2">
@@ -114,29 +117,29 @@
 						<div class="cv-item">
 							<p><span class="cv-item__date">Sep 2015 - Jui 2018</span></p>
 							<h3>Ingénieur génie urbain</h3>
-							<h3 class="cv-item__org"><a href="https://www.utc.fr/">Université de Technologie de Compiègne</a></h3>
-							<p>Formation recouvrant les principaux de l’urbanisme, l’aménagement, la construction, l’immobilier, l’énergie et les transports avec une forte composante en gestion de projets.</p>
+							<p class="cv-item__org"><a href="https://www.utc.fr/">Université de Technologie de Compiègne</a></hp>
+							<p class="text-black-50">Formation recouvrant les principaux de l’urbanisme, l’aménagement, la construction, l’immobilier, l’énergie et les transports avec une forte composante en gestion de projets.</p>
 						</div>
 						<div class="cv-item">
 							<p><span class="cv-item__date">Sep 2017 - Fév 2018</span></p>
 							<h3>Echange international</h3>
-							<h3 class="cv-item__org">Université de Shanghai, UTSEUS</h3>
-							<p>Semestre d’échange : gestion de projet, data science, innovation, éco conception, leadership, entreprenariat, mandarin.</p>
+							<p class="cv-item__org">Université de Shanghai, UTSEUS</p>
+							<p class="text-black-50">Semestre d’échange : gestion de projet, data science, innovation, éco conception, leadership, entreprenariat, mandarin.</p>
 						</div>
 						<div class="cv-item">
 							<p><span class="cv-item__date">Sep 2014 - Jui 2015</span></p>
 							<h3>Classe préparatoire ATS</h3>
-							<h3 class="cv-item__org">Lycée Joliot-Curie, Rennes (35)</h3>
+							<p class="cv-item__org">Lycée Joliot-Curie, Rennes (35)</p>
 						</div>
 						<div class="cv-item">
 							<p><span class="cv-item__date">Sep 2012 - Fév 2014</span></p>
 							<h3>DUT Génie Civil</h3>
-							<h3 class="cv-item__org">IUT Génie Civil de l'Université de Rennes (35)</h3>
+							<p class="cv-item__org">IUT Génie Civil de l'Université de Rennes (35)</p>
 						</div>
 						<div class="cv-item">
 							<p><span class="cv-item__date">Jui 2012</span></p>
 							<h3>Baccalauréat Scientique</h3>
-							<h3 class="cv-item__org">Lycée Saint-Pierre, Saint-Brieuc (22)</h3>
+							<p class="cv-item__org">Lycée Saint-Pierre, Saint-Brieuc (22)</p>
 						</div>
 					</div>
 					<div id="page3">
@@ -163,11 +166,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-md contact">
+		<div class="container-md" id="contact">
 			<h2>Contact</h2>
 			<div class="row">
-				<div class="col-md-6">
-					<img src="#">
+				<div class="col-md-6 d-none d-lg-block">
+					<img src="img/photo_profil.jpg" class="img-fluid rounded float-right" alt="Photo de profil Maxime">
 				</div>
 				<div class="col-md-6">
 					<form>
@@ -201,9 +204,9 @@
 					<h4>Menu</h4>
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item"><a href="#">Accueil</a></li>
-						<li class="list-group-item"><a href="#">A propos</a></li>
-						<li class="list-group-item"><a href="#">Curriculum</a></li>
-						<li class="list-group-item"><a href="#">Contact</a></li>
+						<li class="list-group-item"><a href="#about">A propos</a></li>
+						<li class="list-group-item"><a href="#curriculum">Curriculum</a></li>
+						<li class="list-group-item"><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
 				<div class="col-md-4">

@@ -9,3 +9,16 @@ body {
 	font-family: 'Roboto', sans-serif;
 	margin-top: 4rem;
 }
+
+h1 {
+	font-weight: 700;
+}
+
+a {
+	color: #343A40;
+	text-decoration: none;
+	&:hover {
+		color: $color-primary;
+		text-decoration: none;
+	}
+}

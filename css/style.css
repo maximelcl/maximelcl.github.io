@@ -1,21 +1,41 @@
 /* Color Theme Swatches in Hex */
-.intro {
+#intro {
   height: 35rem;
   text-align: center;
   padding-top: 8rem;
 }
 
-.about {
-  height: 25rem;
+#about {
+  padding-bottom: 1em;
+  margin-bottom: 2em;
 }
-.about__table {
-  margin: 15px;
-  margin-top: 2em;
-  padding: 10px;
+#about h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: 700;
 }
 
-.contact {
-  height: 30rem;
+#curriculum {
+  padding-bottom: 1em;
+}
+#curriculum h2 {
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+#curriculum__sidebar {
+  top: 0px;
+  position: sticky;
+}
+
+#contact {
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+#contact h2 {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-weight: 700;
 }
 
 .social-net {
@@ -24,9 +44,46 @@
   font-size: 2em;
 }
 
+.cv-item {
+  margin-left: 2em;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid lightgrey;
+}
+.cv-item p {
+  margin-bottom: 0px;
+}
+.cv-item__date {
+  color: #0029FA;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.cv-item h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  border-left: 5px solid #0029FA;
+  padding-left: 10px;
+}
+.cv-item__org {
+  font-weight: 700;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin-top: 4rem;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+a {
+  color: #343A40;
+  text-decoration: none;
+}
+a:hover {
+  color: #0029FA;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

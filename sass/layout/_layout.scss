@@ -1,21 +1,38 @@
-.intro {
+#intro {
 	height: 35rem;
 	text-align: center;
 	padding-top: 8rem;
 }
 
-.about {
-	height: 25rem;
-	&__table {
-		margin: 15px;
-		margin-top: 2em;
-		padding: 10px;
+#about {
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	h2 {
+		text-align: center;
+		margin-bottom: 1em;
+		font-weight: 700;
 	}
 }
 
-.curriculum {
+#curriculum {
+	padding-bottom: 1em;
+	h2 {
+		margin-bottom: 1em;
+		font-weight: 700;
+	}
+	&__sidebar {
+		top: 0px;
+		position: sticky;
+	}
 }
 
-.contact {
-	height: 30rem;
+#contact {
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	h2 {
+		text-align: center;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		font-weight: 700;
+	}
 }
