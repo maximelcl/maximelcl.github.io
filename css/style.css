@@ -10,6 +10,7 @@
 
 #about {
   padding-bottom: 1em;
+  padding-top: 60px;
   margin-bottom: 2em;
 }
 #about h2 {
@@ -20,6 +21,7 @@
 
 #curriculum {
   padding-bottom: 1em;
+  padding-top: 60px;
 }
 #curriculum h2 {
   margin-bottom: 1em;
@@ -32,6 +34,7 @@
 
 #contact {
   padding-bottom: 1em;
+  padding-top: 30px;
   margin-bottom: 2em;
 }
 #contact h2 {
@@ -41,6 +44,67 @@
   font-weight: 700;
 }
 
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  transition: opacity 0.3s;
+}
+
+.demo a:hover {
+  opacity: 0.5;
+}
+
+#scroll a {
+  padding-top: 70px;
+}
+
+#scroll a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 3px solid #5C73F2;
+  border-bottom: 3px solid #5C73F2;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: scroll 1.5s infinite;
+  animation: scroll 1.5s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
 .social-net {
   font-size: 2em;
 }
@@ -111,9 +175,14 @@
 .skill-card--value {
   font-weight: 700;
   font-size: 4em;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-in-out;
+  background-position: left;
+  background-size: 0% 100%;
+  background-image: linear-gradient(#5C73F2, #5C73F2);
 }
 .skill-card--value:hover {
-  text-decoration: underline solid #5C73F2;
+  background-size: 100% 100%;
 }
 
 .btn-primary__color {
