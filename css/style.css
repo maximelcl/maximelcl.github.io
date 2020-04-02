@@ -4,6 +4,9 @@
   text-align: center;
   padding-top: 8rem;
 }
+#intro p {
+  font-size: 1.2em;
+}
 
 #about {
   padding-bottom: 1em;
@@ -39,42 +42,142 @@
 }
 
 .social-net {
-  display: inline;
-  width: 10px;
   font-size: 2em;
 }
 
 .cv-item {
   margin-left: 2em;
   margin-bottom: 1em;
-  padding-bottom: 1em;
+  padding: 10px;
+  border-radius: 3px;
   border-bottom: 1px solid lightgrey;
+}
+.cv-item:hover {
+  background-color: #e6e6e6;
 }
 .cv-item p {
   margin-bottom: 0px;
 }
 .cv-item__date {
-  color: #0029FA;
+  color: #5C73F2;
   font-weight: 700;
+  font-size: 0.8em;
   margin-bottom: 0px;
 }
 .cv-item h3 {
   font-size: 1.5em;
   font-weight: 700;
-  border-left: 5px solid #0029FA;
+  border-left: 5px solid #5C73F2;
   padding-left: 10px;
 }
 .cv-item__org {
   font-weight: 700;
 }
 
+.skill-item {
+  padding: 10px;
+}
+.skill-item p {
+  margin-bottom: 3px;
+}
+.skill-item__title {
+  font-size: 1em;
+}
+.skill-item__progress {
+  height: 10px;
+}
+.skill-item__progress:hover {
+  box-shadow: 2px 2px 4px grey;
+}
+.skill-item__progressbar1 {
+  background-color: #230A59;
+}
+.skill-item__progressbar2 {
+  background-color: #5C73F2;
+}
+
+.skill-card {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px #e6e6e6, -3px -1px 6px #e6e6e6;
+  text-align: center;
+}
+.skill-card--title {
+  margin-top: 1em;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.skill-card--value {
+  font-weight: 700;
+  font-size: 4em;
+}
+.skill-card--value:hover {
+  text-decoration: underline solid #5C73F2;
+}
+
+.btn-primary__color {
+  background-color: #0029FA;
+}
+
+.typewriter {
+  max-width: 50%;
+  min-width: 400px;
+}
+.typewriter h2 {
+  font-family: monospace;
+  font-weight: 700;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #5C73F2;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  animation: typing 2.6s steps(25, end), blink-caret 0.8s step-end infinite;
+}
+.typewriter__color {
+  color: #5C73F2;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #5C73F2;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin-top: 4rem;
 }
 
+footer {
+  padding-top: 10px;
+  background-color: black;
+  color: #e6e6e6;
+}
+
 h1 {
   font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 5px;
+  color: white;
 }
 
 a {
@@ -82,7 +185,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #0029FA;
+  color: #5C73F2;
   text-decoration: none;
 }
 

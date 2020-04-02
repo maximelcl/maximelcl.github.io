@@ -1,29 +1,113 @@
 .social-net {
-	display: inline;
-	width: 10px;
 	font-size: 2em;
 }
 
 .cv-item {
 	margin-left: 2em;
 	margin-bottom: 1em;
-	padding-bottom: 1em;
+	padding: 10px;
+	border-radius: 3px;
 	border-bottom: 1px solid lightgrey;
+	&:hover {
+		background-color: #e6e6e6;
+	}
 	p {
 		margin-bottom: 0px;
 	}
 	&__date {
-		color: $color-primary;
+		color: $color-secondary3;
 		font-weight: 700;
+		font-size: 0.8em;
 		margin-bottom: 0px;
 	}
 	h3 {
 		font-size: 1.5em;
 		font-weight: 700;
-		border-left: 5px solid $color-primary;
+		border-left: 5px solid $color-secondary3;
 		padding-left: 10px;
 	}
 	&__org {
 		font-weight: 700;
 	}
+}
+
+.skill-item {
+	padding: 10px;
+	p {
+		margin-bottom: 3px;
+	}
+	&__title {
+		font-size: 1em;
+	}
+	&__progress {
+		height: 10px;
+		&:hover {
+			box-shadow: 2px 2px 4px grey;
+		}
+	}
+	&__progressbar {
+		&1 {
+			background-color: $color-secondary1;
+		}
+		&2 {
+			background-color: $color-secondary3;
+		}
+	}
+}
+
+.skill-card {
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 6px #e6e6e6, -3px -1px 6px #e6e6e6;
+	text-align: center;
+	&--title {
+		margin-top: 1em;
+		font-weight: 700;
+		font-size: 1.5em;
+	}
+	&--value {
+		font-weight: 700;
+		font-size: 4em;
+		&:hover {
+			text-decoration: underline solid $color-secondary3;
+		}
+	}
+}
+
+.btn-primary {
+	&__color {
+		background-color: $color-primary;
+	}
+}
+
+.typewriter {
+	max-width: 50%;
+	min-width: 400px;
+	h2 {
+	font-family: monospace;
+	font-weight: 700;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid $color-secondary3; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	animation: 
+		typing 2.6s steps(25, end),
+		blink-caret 0.8s step-end infinite;
+	}
+	&__color {
+		color: $color-secondary3;
+	}
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: $color-secondary3}
 }
