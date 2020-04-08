@@ -111,13 +111,14 @@
 
 .cv-item {
   margin-left: 2em;
-  margin-bottom: 1em;
-  padding: 10px;
+  padding: 15px;
   border-radius: 3px;
   border-bottom: 1px solid lightgrey;
+  background-color: none;
+  transition: background-color 600ms;
 }
 .cv-item:hover {
-  background-color: #e6e6e6;
+  background-color: #f6f6f6;
 }
 .cv-item p {
   margin-bottom: 0px;
@@ -149,6 +150,8 @@
 }
 .skill-item__progress {
   height: 10px;
+  box-shadow: none;
+  transition: box-shadow 400ms;
 }
 .skill-item__progress:hover {
   box-shadow: 2px 2px 4px grey;
@@ -164,7 +167,8 @@
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
-  box-shadow: 3px 3px 6px #e6e6e6, -3px -1px 6px #e6e6e6;
+  box-shadow: 2px 2px 4px #e6e6e6, -2px -1px 3px #e6e6e6;
+  transition: box-shadow 400ms;
   text-align: center;
 }
 .skill-card--title {
@@ -175,22 +179,21 @@
 .skill-card--value {
   font-weight: 700;
   font-size: 4em;
-  background-repeat: no-repeat;
-  transition: all 500ms ease-in-out;
-  background-position: left;
-  background-size: 0% 100%;
-  background-image: linear-gradient(#5C73F2, #5C73F2);
 }
-.skill-card--value:hover {
-  background-size: 100% 100%;
+.skill-card:hover {
+  box-shadow: 4px 4px 8px #e6e6e6, -4px -2px 6px #e6e6e6;
 }
 
 .btn-primary__color {
-  background-color: #0029FA;
+  background-color: #5C73F2;
+  border: none;
+}
+.btn-primary__color:hover {
+  background-color: #8b9cf6;
 }
 
 .typewriter {
-  max-width: 50%;
+  max-width: 55%;
   min-width: 400px;
 }
 .typewriter h2 {
@@ -204,7 +207,7 @@
   /* Keeps the content on a single line */
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
-  animation: typing 2.6s steps(25, end), blink-caret 0.8s step-end infinite;
+  animation: typing 3s steps(25, end), blink-caret 0.8s step-end infinite;
 }
 .typewriter__color {
   color: #5C73F2;
@@ -236,11 +239,17 @@ body {
 footer {
   padding-top: 10px;
   background-color: black;
+}
+footer p {
   color: #e6e6e6;
 }
 
 h1 {
   font-weight: 700;
+}
+
+h2 {
+  margin-top: 1em;
 }
 
 ul {

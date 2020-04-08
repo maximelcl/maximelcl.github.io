@@ -22,8 +22,8 @@
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 3px solid $color-secondary3;
-  border-bottom: 3px solid $color-secondary3;
+  border-left: 3px solid $color-primary;
+  border-bottom: 3px solid $color-primary;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: scroll 1.5s infinite;
@@ -63,18 +63,19 @@
 
 .cv-item {
 	margin-left: 2em;
-	margin-bottom: 1em;
-	padding: 10px;
+	padding: 15px;
 	border-radius: 3px;
 	border-bottom: 1px solid lightgrey;
+	background-color: none;
+	transition: background-color 600ms;
 	&:hover {
-		background-color: #e6e6e6;
+		background-color: #f6f6f6;
 	}
 	p {
 		margin-bottom: 0px;
 	}
 	&__date {
-		color: $color-secondary3;
+		color: $color-primary;
 		font-weight: 700;
 		font-size: 0.8em;
 		margin-bottom: 0px;
@@ -82,7 +83,7 @@
 	h3 {
 		font-size: 1.5em;
 		font-weight: 700;
-		border-left: 5px solid $color-secondary3;
+		border-left: 5px solid $color-primary;
 		padding-left: 10px;
 	}
 	&__org {
@@ -100,6 +101,8 @@
 	}
 	&__progress {
 		height: 10px;
+		box-shadow: none;
+		transition: box-shadow 400ms;
 		&:hover {
 			box-shadow: 2px 2px 4px grey;
 		}
@@ -109,7 +112,7 @@
 			background-color: $color-secondary1;
 		}
 		&2 {
-			background-color: $color-secondary3;
+			background-color: $color-primary;
 		}
 	}
 }
@@ -118,7 +121,8 @@
 	margin: 5px;
 	padding: 5px;
 	border-radius: 5px;
-	box-shadow: 3px 3px 6px #e6e6e6, -3px -1px 6px #e6e6e6;
+	box-shadow: 2px 2px 4px #e6e6e6, -2px -1px 3px #e6e6e6;
+	transition: box-shadow 400ms;
 	text-align: center;
 	&--title {
 		margin-top: 1em;
@@ -128,39 +132,38 @@
 	&--value {
 		font-weight: 700;
 		font-size: 4em;
-		background-repeat: no-repeat;
-		transition: all 500ms ease-in-out;
-		background-position: left;
-		background-size: 0% 100%;
-		background-image: linear-gradient($color-secondary3, $color-secondary3);
-		&:hover {
-			background-size: 100% 100%;
-		}
+	}
+	&:hover {
+		box-shadow: 4px 4px 8px #e6e6e6, -4px -2px 6px #e6e6e6;
 	}
 }
 
 .btn-primary {
 	&__color {
 		background-color: $color-primary;
+		border: none;
+		&:hover {
+			background-color: lighten($color-primary, 10%);
+		}
 	}
 }
 
 .typewriter {
-	max-width: 50%;
+	max-width: 55%;
 	min-width: 400px;
 	h2 {
 	font-family: monospace;
 	font-weight: 700;
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: .15em solid $color-secondary3; /* The typwriter cursor */
+	border-right: .15em solid $color-primary; /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	animation: 
-		typing 2.6s steps(25, end),
+		typing 3s steps(25, end),
 		blink-caret 0.8s step-end infinite;
 	}
 	&__color {
-		color: $color-secondary3;
+		color: $color-primary;
 	}
 }
 
@@ -173,5 +176,5 @@
 /* The typewriter cursor effect */
 @keyframes blink-caret {
 	from, to { border-color: transparent }
-	50% { border-color: $color-secondary3}
+	50% { border-color: $color-primary}
 }
