@@ -61,6 +61,11 @@
 	font-size: 2em;
 }
 
+.curriculum--sidebar {
+	top: 100px;
+	position: sticky;
+}
+
 .cv-item {
 	margin-left: 2em;
 	padding: 15px;
@@ -149,10 +154,11 @@
 }
 
 .typewriter {
-	max-width: 55%;
+	max-width: 100%;
 	min-width: 400px;
 	h2 {
 	font-family: monospace;
+	font-size: 1.8em;
 	font-weight: 700;
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
 	border-right: .15em solid $color-primary; /* The typwriter cursor */
