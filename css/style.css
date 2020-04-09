@@ -27,10 +27,6 @@
   margin-bottom: 1em;
   font-weight: 700;
 }
-#curriculum__sidebar {
-  top: 0px;
-  position: sticky;
-}
 
 #contact {
   padding-bottom: 1em;
@@ -112,6 +108,20 @@
 .curriculum--sidebar {
   top: 100px;
   position: sticky;
+}
+.curriculum--item {
+  padding: 10px;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 1em;
+  color: #230A59;
+  transition: all 500ms;
+}
+.curriculum--item:hover {
+  padding-left: 30px;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #5C73F2;
 }
 
 .cv-item {
@@ -266,7 +276,8 @@ ul {
 }
 
 a {
-  color: #230A59;
+  color: inherit;
+  transition: color 400ms;
   text-decoration: none;
 }
 a:hover {

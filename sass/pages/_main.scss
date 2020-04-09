@@ -27,7 +27,8 @@ ul {
 }
 
 a {
-	color: $color-secondary1;
+	color: inherit;
+	transition: color 400ms;
 	text-decoration: none;
 	&:hover {
 		color: $color-primary;

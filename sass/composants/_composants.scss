@@ -61,9 +61,25 @@
 	font-size: 2em;
 }
 
-.curriculum--sidebar {
-	top: 100px;
-	position: sticky;
+.curriculum {
+	&--sidebar {
+		top: 100px;
+		position: sticky;
+	}
+	&--item {
+		padding: 10px;
+		padding-left: 10px;
+		font-weight: 400;
+		font-size: 1em;
+		color: $color-secondary1;
+		transition: all 500ms;
+		&:hover {
+			padding-left: 30px;
+			font-weight: 700;
+			font-size: 1.3em;
+			color: $color-primary;
+		}
+	}
 }
 
 .cv-item {
