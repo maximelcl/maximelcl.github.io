@@ -24,19 +24,16 @@
   padding-top: 60px;
 }
 #curriculum h2 {
+  padding-top: 2em;
   margin-bottom: 1em;
   font-weight: 700;
 }
 
 #contact {
-  padding-bottom: 1em;
   padding-top: 30px;
-  margin-bottom: 2em;
 }
 #contact h2 {
   text-align: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
   font-weight: 700;
 }
 
