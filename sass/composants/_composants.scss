@@ -95,7 +95,7 @@
 	p {
 		margin-bottom: 0px;
 	}
-	&__date {
+	&--date {
 		color: $color-primary;
 		font-weight: 700;
 		font-size: 0.8em;
@@ -107,8 +107,18 @@
 		border-left: 5px solid $color-primary;
 		padding-left: 10px;
 	}
-	&__org {
+	&--org {
 		font-weight: 700;
+	}
+}
+
+.lang-item {
+	th {
+		padding: 10px;
+		font-size: 1.1em;
+	}
+	span {
+		background-color: $color-primary;
 	}
 }
 
@@ -117,10 +127,10 @@
 	p {
 		margin-bottom: 3px;
 	}
-	&__title {
+	&--title {
 		font-size: 1em;
 	}
-	&__progress {
+	&--progress {
 		height: 10px;
 		box-shadow: none;
 		transition: box-shadow 400ms;
@@ -128,7 +138,7 @@
 			box-shadow: 2px 2px 4px grey;
 		}
 	}
-	&__progressbar {
+	&--progressbar {
 		&1 {
 			background-color: $color-secondary1;
 		}

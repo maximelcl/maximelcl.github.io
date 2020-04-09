@@ -138,7 +138,7 @@
 .cv-item p {
   margin-bottom: 0px;
 }
-.cv-item__date {
+.cv-item--date {
   color: #5C73F2;
   font-weight: 700;
   font-size: 0.8em;
@@ -150,8 +150,16 @@
   border-left: 5px solid #5C73F2;
   padding-left: 10px;
 }
-.cv-item__org {
+.cv-item--org {
   font-weight: 700;
+}
+
+.lang-item th {
+  padding: 10px;
+  font-size: 1.1em;
+}
+.lang-item span {
+  background-color: #5C73F2;
 }
 
 .skill-item {
@@ -160,21 +168,21 @@
 .skill-item p {
   margin-bottom: 3px;
 }
-.skill-item__title {
+.skill-item--title {
   font-size: 1em;
 }
-.skill-item__progress {
+.skill-item--progress {
   height: 10px;
   box-shadow: none;
   transition: box-shadow 400ms;
 }
-.skill-item__progress:hover {
+.skill-item--progress:hover {
   box-shadow: 2px 2px 4px grey;
 }
-.skill-item__progressbar1 {
+.skill-item--progressbar1 {
   background-color: #230A59;
 }
-.skill-item__progressbar2 {
+.skill-item--progressbar2 {
   background-color: #5C73F2;
 }
 
@@ -272,7 +280,6 @@ h2 {
 ul {
   list-style-type: none;
   padding-left: 5px;
-  color: white;
 }
 
 a {
