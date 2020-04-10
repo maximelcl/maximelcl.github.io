@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Color Theme Swatches in Hex */
 #intro {
   height: 35rem;
@@ -15,8 +16,6 @@
 }
 #about h2 {
   text-align: center;
-  margin-bottom: 1em;
-  font-weight: 700;
 }
 
 #curriculum {
@@ -25,8 +24,6 @@
 }
 #curriculum h2 {
   padding-top: 1em;
-  margin-bottom: 1em;
-  font-weight: 700;
 }
 
 #contact {
@@ -102,11 +99,11 @@
   font-size: 2em;
 }
 
-.curriculum--sidebar {
+.sidebar {
   top: 100px;
   position: sticky;
 }
-.curriculum--item {
+.sidebar--item {
   padding: 10px;
   padding-left: 10px;
   font-weight: 400;
@@ -114,10 +111,10 @@
   color: #230A59;
   transition: all 500ms;
 }
-.curriculum--item:hover {
-  padding-left: 30px;
+.sidebar--item:hover {
+  padding-left: 15px;
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: #5C73F2;
 }
 
@@ -173,6 +170,17 @@
   box-shadow: 0px 0px 7px #5C73F2;
   width: 14px;
   height: 14px;
+}
+.cv-item .btn {
+  background-color: #5C73F2;
+  border: none;
+  font-size: 0.7em;
+}
+.cv-item .btn:hover {
+  background-color: #8b9cf6;
+}
+.cv-item .btn a:hover {
+  color: inherit;
 }
 
 .lang-item th {
@@ -276,6 +284,49 @@
     border-color: #5C73F2;
   }
 }
+/*Page détail des cours */
+.course {
+  border-radius: 8px;
+  box-shadow: 0 3px 5px #cccccc;
+  transition: box-shadow 400ms;
+  max-width: 100%;
+  display: flex;
+  margin: 15px;
+  overflow: hidden;
+}
+.course:hover {
+  box-shadow: 0px 6px 10px #cccccc;
+}
+.course-main {
+  background-color: #5C73F2;
+  color: white;
+  padding: 15px;
+  width: 35%;
+}
+.course h3 {
+  font-size: 1em;
+  font-weight: 700;
+}
+.course p span {
+  background-color: #eaedfd;
+  color: #5C73F2;
+  font-size: 0.7em;
+}
+.course-content {
+  padding: 20px;
+  width: 65%;
+  font-size: 0.8em;
+}
+.course-content a {
+  color: #5C73F2;
+  text-align: right;
+}
+.course--date {
+  font-size: 0.6em;
+  font-weight: 700;
+  color: #eaedfd;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin-top: 4rem;
@@ -292,10 +343,13 @@ footer a {
 
 h1 {
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
   margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: 700;
 }
 
 ul {

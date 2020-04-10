@@ -61,11 +61,9 @@
 	font-size: 2em;
 }
 
-.curriculum {
-	&--sidebar {
-		top: 100px;
-		position: sticky;
-	}
+.sidebar {
+	top: 100px;
+	position: sticky;
 	&--item {
 		padding: 10px;
 		padding-left: 10px;
@@ -74,9 +72,9 @@
 		color: $color-secondary1;
 		transition: all 500ms;
 		&:hover {
-			padding-left: 30px;
+			padding-left: 15px;
 			font-weight: 700;
-			font-size: 1.3em;
+			font-size: 1.1em;
 			color: $color-primary;
 		}
 	}
@@ -111,7 +109,6 @@
 	h3 {
 		font-size: 1.5em;
 		font-weight: 700;
-		//padding-left: 10px;
 		position: relative;
 		&::after {
 			content: '';
@@ -134,6 +131,17 @@
 		box-shadow: 0px 0px 7px $color-primary;
 		width: 14px;
 		height: 14px;
+	}
+	.btn {
+		background-color: $color-primary;
+		border: none;
+		font-size: 0.7em;
+		&:hover {
+			background-color: lighten($color-primary, 10%);
+		}
+		a:hover {
+			color: inherit;
+		}
 	}
 }
 
@@ -234,4 +242,48 @@
 @keyframes blink-caret {
 	from, to { border-color: transparent }
 	50% { border-color: $color-primary}
+}
+
+/*Page détail des cours */
+
+.course {
+	border-radius: 8px;
+	box-shadow: 0 3px 5px #cccccc;
+	transition: box-shadow 400ms;
+	max-width: 100%;
+	display: flex;
+	margin: 15px;
+	overflow: hidden;
+	&:hover {
+		box-shadow: 0px 6px 10px #cccccc;
+	}
+	&-main {
+		background-color: $color-primary;
+		color: white;
+		padding: 15px;
+		width: 35%;
+		}
+		h3 {
+			font-size: 1em;
+			font-weight: 700;
+		}
+		p span {
+			background-color: lighten($color-primary, 30%);
+			color: $color-primary;
+			font-size: 0.7em;
+		}
+	&-content {
+		padding: 20px;
+		width: 65%;
+		font-size: 0.8em;
+		a {
+			color: $color-primary;
+			text-align: right;
+		}
+	}
+	&--date {
+		font-size: 0.6em;
+		font-weight: 700;
+		color: lighten($color-primary, 30%);
+	}
 }
