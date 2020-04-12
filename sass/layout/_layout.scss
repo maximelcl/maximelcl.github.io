@@ -16,11 +16,19 @@
 	}
 }
 
-#curriculum {
+#career {
 	padding-bottom: 1em;
 	padding-top: 60px;
 	h2 {
 		padding-top: 1em;
+	}
+}
+
+#skill {
+	> h3 {
+		margin-top: 1em;
+		font-size: 1.2em;
+		font-weight: 700;
 	}
 }
 
